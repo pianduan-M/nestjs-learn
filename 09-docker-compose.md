@@ -1,0 +1,24 @@
+1. 创建 docker-compose.yml 文件
+
+   ```yaml
+   version: "3"
+   
+   services:
+     db:
+       image: postgres
+       restart: always
+       ports:
+         - "5432:5432"
+       environment:
+         POSTGRES_PASSWORD: pass123
+   ```
+
+   
+
+2. 执行 ` docker-compose` 命令
+
+   ```shell
+    docker-compose up -d 
+   ```
+
+   
